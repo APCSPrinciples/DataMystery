@@ -68,4 +68,13 @@ let latitudes = [37.747201, 37.747201, 37.747201, 37.747201, 37.7457331, 37.7459
 let longitudes = [-122.503728, -122.503728, -122.503728, -122.503728, -122.5001465, -122.4954998, -122.4875535, -122.4767629, -122.474164, -122.474164, -122.474164, -122.4756721, -122.475964, -122.4764707, -122.4760707, -122.4858554, -122.4985913, -122.503728, -122.503728];
 let time = [1300, 1310, 1320, 1330, 1340, 1350, 1400, 1410, 1420, 1430, 1440, 1450, 1500, 1510, 1520, 1530, 1540, 1550, 1600];
 ```
-If you think you know the answer to the mystery, call over your instructor and explain your solution.
+Just like the previous data visualization tutorial, add a `let cur = 0;` variable to keep track of the current location in the arrays. Then add the following code to display the suspects position on the map.
+```javascript
+  let suspectY = map(latitudes[cur], minLat, maxLat, 0, height);
+  let suspectX = map(longitudes[cur], minLong, maxLong, 0, width);
+  fill(0, 255, 0);
+  circle(suspectX, suspectY, 15);
+  fill(0);
+  text("Time: " + time[cur], suspectX + 15, suspectY);
+  ```
+You will then need to figure out a way to make the `cur` variable progress through all the movements of the suspect. If you think you know the answer to the mystery, call over your instructor and explain your solution.
