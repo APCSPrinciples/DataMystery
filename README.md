@@ -24,6 +24,20 @@ The suspect, Aces Peck, has been accused of breaking and entering. An alarm soun
 (37.747201,-122.503728,"15:50")   
 (37.747201,-122.503728,"16:00")
 ```
+Our first step is to create a program that shows a map of the area around the crime. Run the following code and you should see a map of the outer sunset area of San Francisco:
+```javascript
+let sfmap;
 
- 
+function setup() {
+  createCanvas(638, 348);
+  sfmap = loadImage('https://raw.githubusercontent.com/APCSPrinciples/DataMystery/master/Map.PNG');
+}
+
+function draw() {
+  image(sfmap, 0, 0, 638, 348);
+}
+```
+Now, where going to mark the map with the scene of the crime.  We'll need to find the GPS coordinates of 2043 19th Avenue. Search for the location on Google Maps and then look in the URL. You should be able to see the latitude and longitude of the location
+
+![](DataMystery.JPG)   
 If you think you know the answer to the mystery, call over your instructor and explain your solution.
