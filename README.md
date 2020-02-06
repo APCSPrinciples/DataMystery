@@ -40,4 +40,26 @@ function draw() {
 Now, where going to mark the map with the scene of the crime.  We'll need to find the GPS coordinates of 2043 19th Avenue. Search for the location on Google Maps and then look in the URL. You should be able to see the latitude and longitude of the location
 
 ![](DataMystery.JPG)   
+
+Now add the following code that will translate that GPS location into an x and y coordinate. Then draw a red circle at that place on the map.
+```javascript
+let sfmap;
+let minLat = 37.752242 // minimum latitude in map
+let maxLat = 37.728825 // maximum latitude in map
+let minLong = -122.509245 // minimum longitude in map
+let maxLong = -122.454380 // maximum longitude in map
+
+function setup() {
+  createCanvas(638, 348);
+  sfmap = loadImage('https://raw.githubusercontent.com/APCSPrinciples/DataMystery/master/Map.PNG');
+}
+
+function draw() {
+  image(sfmap, 0, 0, 638, 348);
+  let y = map(37.7496576, minLat, maxLat, 0, height);
+  let x = map(-122.4786662, minLong, maxLong, 0, width);
+  fill(255, 0, 0);
+  circle(x, y, 15);
+}
+```
 If you think you know the answer to the mystery, call over your instructor and explain your solution.
