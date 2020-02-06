@@ -77,4 +77,4 @@ Just like the previous data visualization tutorial, add a `let cur = 0;` variabl
   fill(0);
   text("Time: " + time[cur], suspectX + 15, suspectY);
   ```
-You will then need to figure out a way to make the `cur` variable progress through all the movements of the suspect. If you think you know the answer to the mystery, call over your instructor and explain your solution.
+You will then need to figure out a way to make the `cur` variable progress through all the movements of the suspect. There is nothing to turn in for this assignment. If you think you know the answer to the mystery, call over your instructor and explain how you got your answer.
