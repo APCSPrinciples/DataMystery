@@ -56,8 +56,8 @@ function setup() {
 
 function draw() {
   image(sfmap, 0, 0, 638, 348);
-  let y = map(37.7496576, minLat, maxLat, 0, height);
-  let x = map(-122.4786662, minLong, maxLong, 0, width);
+  let y = map(37.746909, minLat, maxLat, 0, height);
+  let x = map(-122.4771534, minLong, maxLong, 0, width);
   fill(255, 0, 0);
   circle(x, y, 15);
 }
