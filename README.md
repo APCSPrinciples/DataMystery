@@ -41,13 +41,13 @@ Now, where going to mark the map with the scene of the crime.  We'll need to fin
 
 ![](DataMystery.JPG)   
 
-Now add the following code that will translate that GPS location into an x and y coordinate. Then draw a red circle at that place on the map.
+Now add the following code that will convert that GPS location into an x and y coordinate. It uses the p5 [map()](https://p5js.org/reference/#/p5/map) function to do the conversion. I then draws a red circle at that place on the map.
 ```javascript
 let sfmap;
-let minLat = 37.752242 // minimum latitude in map
-let maxLat = 37.728825 // maximum latitude in map
-let minLong = -122.509245 // minimum longitude in map
-let maxLong = -122.454380 // maximum longitude in map
+let minLat = 37.752242 // minimum latitude on sfmap
+let maxLat = 37.728825 // maximum latitude on sfmap
+let minLong = -122.509245 // minimum longitude on sfmap
+let maxLong = -122.454380 // maximum longitude on sfmap
 
 function setup() {
   createCanvas(638, 348);
