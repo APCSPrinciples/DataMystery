@@ -37,11 +37,11 @@ function draw() {
   image(sfmap, 0, 0, 638, 348);
 }
 ```
-Now, where going to mark the map with the scene of the crime.  We'll need to find the GPS coordinates of 2043 19th Avenue. Search for the location on Google Maps and then look in the URL. You should be able to see the latitude and longitude of the location
+Now mark the map with the scene of the crime.  To find the GPS coordinates of 2043 19th Avenue search for the location on Google Maps and then look in the URL. You should be able to see the latitude and longitude of the location
 
 ![](DataMystery.JPG)   
 
-Now add the following code that will convert that GPS location into an x and y coordinate. It uses the p5 [map()](https://p5js.org/reference/#/p5/map) function to do the conversion. I then draws a red circle at that place on the map.
+Now add the following code that will convert that GPS location into an x and y coordinate. It uses the p5 [map()](https://p5js.org/reference/#/p5/map) function to do the conversion. It then draws a red circle at that place on the map.
 ```javascript
 let sfmap;
 let minLat = 37.752242 // minimum latitude on sfmap
