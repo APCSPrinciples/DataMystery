@@ -22,7 +22,8 @@ The suspect, Aces Peck, has been accused of breaking and entering. An alarm soun
 (37.7482044,-122.4858554,"15:30")   
 (37.7456825,-122.4985913,"15:40")   
 (37.747201,-122.503728,"15:50")   
-(37.747201,-122.503728,"16:00")```   
+(37.747201,-122.503728,"16:00")
+```
 
  
 If you think you know the answer to the mystery, call over your instructor and explain your solution.
